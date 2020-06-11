@@ -18,7 +18,7 @@
 interpret_bf <- function(bf, rules = "jeffreys1961", include_value = FALSE) {
   ori_bf <- bf
 
-  dir <- ifelse(bf < 1, "against", "in favour of")
+  dir <- ifelse(bf < 1, "against", "in favor of")
   bf <- c(bf)
   bf[bf < 1] <- 1 / abs(bf[bf < 1])
 
